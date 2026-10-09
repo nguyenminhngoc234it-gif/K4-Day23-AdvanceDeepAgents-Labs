@@ -1,0 +1,106 @@
+[
+  {
+    "n": 1,
+    "id": "acl-2025-emnlp-tutorial",
+    "url": "https://aclanthology.org/2025.emnlp-tutorials.1/",
+    "title": "Efficient Inference for Large Language Models - ACL Anthology",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 2,
+    "id": "google-cloud-blog-2026",
+    "url": "https://cloud.google.com/blog/topics/developers-practitioners/five-techniques-to-reach-the-efficient-frontier-of-llm-inference",
+    "title": "Five techniques to reach the efficient frontier of LLM inference",
+    "date": "2026-03-27",
+    "source": "web"
+  },
+  {
+    "n": 3,
+    "id": "arxiv-2404-14294",
+    "url": "https://arxiv.org/abs/2404.14294",
+    "title": "A Survey on Efficient Inference for Large Language Models",
+    "date": "n.d.",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "abhik.ai-transformer-optimization-2024",
+    "url": "https://www.abhik.ai/papers/optimizing-transformer-inference",
+    "title": "A Survey of Techniques for Optimizing Transformer Inference | Abhik Sarkar",
+    "date": "2024-01-21",
+    "source": "web"
+  },
+  {
+    "n": 5,
+    "id": "aclanthology-2025.ranlp-1.93",
+    "url": "https://aclanthology.org/2025.ranlp-1.93/",
+    "title": "A Survey on Small Language Models - ACL Anthology",
+    "date": "2025",
+    "source": "web"
+  },
+  {
+    "n": 6,
+    "id": "arxiv-2410.20011",
+    "url": "https://arxiv.org/pdf/2410.20011",
+    "title": "A Survey on Small Language Models",
+    "date": "2024",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "hf-search-2506.17289",
+    "url": "https://huggingface.co/papers/2506.17289",
+    "title": "Evaluating Generalization and Representation Stability in Small LMs via Prompting, Fine-Tuning and Out-of-Distribution Prompts",
+    "date": "2025-06-16",
+    "source": "hf-search"
+  },
+  {
+    "n": 8,
+    "id": "hf-search-2311.03216",
+    "url": "https://huggingface.co/papers/2311.03216",
+    "title": "Mini Minds: Exploring Bebeshka and Zlata Baby Models",
+    "date": "2023-11-06",
+    "source": "hf-search"
+  },
+  {
+    "n": 9,
+    "id": "2610.09941",
+    "url": "https://arxiv.org/abs/2610.09941",
+    "title": "Purifying Backdoored Large Vision-Language Models by Removing Hijacked Directions",
+    "date": "2026-10-07",
+    "source": "arxiv"
+  },
+  {
+    "n": 10,
+    "id": "2610.09186",
+    "url": "https://arxiv.org/abs/2610.09186",
+    "title": "The Dichotomy Between Pattern Recognition and Step-by-Step Reasoning",
+    "date": "2026-10-06",
+    "source": "arxiv"
+  },
+  {
+    "n": 11,
+    "id": "2407.09276",
+    "url": "https://huggingface.co/papers/2407.09276",
+    "title": "H2O-Danube3 Technical Report",
+    "date": "2024-07-12",
+    "source": "hf-search"
+  },
+  {
+    "n": 12,
+    "id": "2606.14711",
+    "url": "https://huggingface.co/papers/2606.14711",
+    "title": "SWARM-LLM: Collaborative Inference for Edge-based Small Language Models",
+    "date": "2026-04-22",
+    "source": "hf-search"
+  },
+  {
+    "n": 13,
+    "id": "2510.03515",
+    "url": "https://huggingface.co/papers/2510.03515",
+    "title": "RAPID: An Efficient Reinforcement Learning Algorithm for Small Language Models",
+    "date": "2025-10-03",
+    "source": "hf-search"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "n": 1,
+    "id": "2504.20834",
+    "url": "https://huggingface.co/papers/2504.20834",
+    "title": "Reinforcement Learning for LLM Reasoning Under Memory Constraints",
+    "date": "2025-04-29",
+    "source": "hf-search"
+  },
+  {
+    "n": 2,
+    "id": "2506.14965",
+    "url": "https://huggingface.co/papers/2506.14965",
+    "title": "Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective",
+    "date": "2025-06-17",
+    "source": "hf-search"
+  },
+  {
+    "n": 3,
+    "id": "2505.17652",
+    "url": "https://huggingface.co/papers/2505.17652",
+    "title": "Rethinking the Sampling Criteria in Reinforcement Learning for LLM Reasoning: A Competence-Difficulty Alignment Perspective",
+    "date": "2025-05-23",
+    "source": "hf-search"
+  },
+  {
+    "n": 4,
+    "id": "2506.02177",
+    "url": "https://huggingface.co/papers/2506.02177",
+    "title": "Act Only When It Pays: Efficient Reinforcement Learning for LLM Reasoning via Selective Rollouts",
+    "date": "2025-06-02",
+    "source": "hf-search"
+  },
+  {
+    "n": 5,
+    "id": "2602.05281",
+    "url": "https://huggingface.co/papers/2602.05281",
+    "title": "Back to Basics: Revisiting Exploration in Reinforcement Learning for LLM Reasoning via Generative Probabilities",
+    "date": "2026-02-05",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "web-1",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12546433/",
+    "title": "Toward large reasoning models: A survey of reinforced learning for LLM reasoning",
+    "date": "2025-10-01",
+    "source": "web"
+  },
+  {
+    "n": 7,
+    "id": "arxiv-2504.20571",
+    "url": "https://arxiv.org/abs/2504.20571",
+    "title": "One-Shot Reinforcement Learning with Verifiable Rewards for Mathematical Reasoning in LLMs",
+    "date": "2025",
+    "source": "web"
+  },
+  {
+    "n": 8,
+    "id": "arxiv-2502.14768",
+    "url": "https://arxiv.org/abs/2502.14768",
+    "title": "Logic-RL: Unleashing LLM Reasoning with Rule-Based Reinforcement Learning",
+    "date": "2025-02-20",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "web-2",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/6058d0c628a03fd95dfe5c72cbdf9e64-Paper-Conference.pdf",
+    "title": "Beyond Accuracy: Dissecting Mathematical Reasoning for LLMs Under Reinforcement Learning",
+    "date": "2025",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "web-3",
+    "url": "https://proceedings.mlr.press/v267/li25bv.html",
+    "title": "Policy Guided Tree Search for Enhanced LLM Reasoning",
+    "date": "2025-10-06",
+    "source": "web"
+  },
+  {
+    "n": 11,
+    "id": "2602.09305v1",
+    "url": "https://arxiv.org/html/2602.09305v1",
+    "title": "Reward Modeling for Reinforcement Learning-Based LLM Reasoning: Design, Challenges, and Evaluation",
+    "date": "n.d.",
+    "source": "arxiv"
+  },
+  {
+    "n": 12,
+    "id": "neurips2025_paper",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/537d5aa768c2d534016a4d06f87bc8fb-Paper-Conference.pdf",
+    "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 13,
+    "id": "iclr2026_paper",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/f3b910fbc36298f9570cd929e115cb02-Paper-Conference.pdf",
+    "title": "TRAPS? A RL LLM",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 14,
+    "id": "acm_survey_2026",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3837057?af=R",
+    "title": "Reinforcement Learning in the Era of Large Language Models: Challenges and Opportunities | ACM Computing Surveys",
+    "date": "2026-09-29",
+    "source": "web"
+  },
+  {
+    "n": 15,
+    "id": "arxiv_2509.08827",
+    "url": "https://arxiv.org/abs/2509.08827",
+    "title": "A Survey of Reinforcement Learning for Large Reasoning Models",
+    "date": "n.d.",
+    "source": "arxiv"
+  },
+  {
+    "n": 16,
+    "id": "hf-daily-1",
+    "url": "https://huggingface.co/datasets/hf-daily-papers",
+    "title": "Trending papers on reinforcement learning and reasoning (Hugging Face Daily Papers)",
+    "date": "2024-12-01",
+    "source": "hf-daily"
+  }
+]

@@ -65,12 +65,12 @@ curl -s -X POST https://mcp.exa.ai/mcp \
 
 Quy ước không gian làm việc (cho sẵn trong tệp), tất cả là đường dẫn tuyệt đối trong sandbox:
 
-| Hằng số | Đường dẫn | Nội dung |
-|---|---|---|
-| `NOTES_DIR` | `/tmp/work/research/notes/` | `<NN>-<slug>.md` do researcher ghi |
-| `SOURCES_PATH` | `/tmp/work/research/sources.json` | mảng `{n, id, url, title, date, source}` |
-| `VALIDATOR_PATH` | `/tmp/work/research/check_citations.py` | do `research.py` tải lên |
-| `REPORT_PATH` | `/tmp/work/report/report.md` | báo cáo cuối |
+| Hằng số          | Đường dẫn                               | Nội dung                                 |
+| ---------------- | --------------------------------------- | ---------------------------------------- |
+| `NOTES_DIR`      | `/tmp/work/research/notes/`             | `<NN>-<slug>.md` do researcher ghi       |
+| `SOURCES_PATH`   | `/tmp/work/research/sources.json`       | mảng `{n, id, url, title, date, source}` |
+| `VALIDATOR_PATH` | `/tmp/work/research/check_citations.py` | do `research.py` tải lên                 |
+| `REPORT_PATH`    | `/tmp/work/report/report.md`            | báo cáo cuối                             |
 
 `source` thuộc `arxiv`, `hf-daily`, `hf-search`, `web`. `source` là **công cụ đã trả về nguồn đó**, không phải tên miền: một bài arXiv tìm thấy qua `web_search` có `source` là `web`. `url` phải khớp với họ: `arxiv` → `https://arxiv.org/abs/<id>`, `hf-daily`/`hf-search` → `https://huggingface.co/papers/<id>`; người chấm đối chiếu điều này.
 
@@ -136,19 +136,19 @@ Tệp này **chạy trong sandbox** nên chỉ dùng thư viện chuẩn. Quy t�
 
 Chạy từng chủ đề trong `topics.md`, rồi chạy `check_citations.py` trên máy của bạn để kiểm tra.
 
-| Hiện tượng | Nguyên nhân thường gặp |
-|---|---|
-| `web_search` toàn trả văn bản nói về giới hạn tốc độ | Chưa phát hiện cờ `_meta` của Exa (mục 1.4); hoặc chưa có `EXA_API_KEY`. |
-| Tool trả `NO RESULTS` liên tục | Truy vấn quá dài/cụ thể: viết lại bằng vài từ khóa. |
-| `arxiv_search` trả `ERROR: ... HTTP 429` | arXiv giới hạn theo IP; cả lớp dùng chung mạng thì rất dễ gặp. Tăng `cap`/số lần thử cho arXiv, chạy lệch giờ với bạn cùng lớp; nếu vẫn thiếu họ `arxiv`, lead phải bù bằng họ khác để đủ 3 họ. |
-| `source_families` chỉ có 2 họ | Prompt chỉ yêu cầu "ít nhất 2 họ" cho researcher; lead phải kiểm tổng số họ khi gộp `sources.json` và giao thêm việc nếu thiếu (RUBRIC 2.2). |
-| Agent dừng mà không có `report.md` | Prompt của lead thiếu bước 4-5; hoặc đụng giới hạn đệ quy. |
-| `subagent_calls` bằng 0 | Prompt không bắt giao việc, hoặc `description` của subagent quá mơ hồ. |
-| Lỗi tạo sandbox | Sai `DAYTONA_API_KEY` hoặc hết hạn mức: dừng/xóa các sandbox cũ trong dashboard Daytona, hoặc đặt `SANDBOX=docker` để dùng container Docker cục bộ. |
-| Lần này báo cáo hợp lệ, lần sau trích dẫn lỗi | Tính ngẫu nhiên của LLM. Siết prompt (ví dụ yêu cầu rõ "một dòng cho mỗi nguồn") và validator; không sửa tay báo cáo. |
-| Cảnh báo `Sandbox glob could not read ... under '/'` | Vô hại: agent đã liệt kê thư mục gốc của sandbox. |
-| Báo cáo có `[n]` không tồn tại | Lead viết báo cáo trước khi gộp `sources.json`; bắt buộc chạy validator và sửa. |
-| `## References` gộp nhiều nguồn dưới một số, hoặc số tham khảo lệch với `sources.json` | LLM tự viết danh sách tham khảo. Đừng để nó viết: bắt lead bỏ phần này và chạy `finalize_citations.py` (mục 2.6). |
+| Hiện tượng                                                                             | Nguyên nhân thường gặp                                                                                                                                                                          |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `web_search` toàn trả văn bản nói về giới hạn tốc độ                                   | Chưa phát hiện cờ `_meta` của Exa (mục 1.4); hoặc chưa có `EXA_API_KEY`.                                                                                                                        |
+| Tool trả `NO RESULTS` liên tục                                                         | Truy vấn quá dài/cụ thể: viết lại bằng vài từ khóa.                                                                                                                                             |
+| `arxiv_search` trả `ERROR: ... HTTP 429`                                               | arXiv giới hạn theo IP; cả lớp dùng chung mạng thì rất dễ gặp. Tăng `cap`/số lần thử cho arXiv, chạy lệch giờ với bạn cùng lớp; nếu vẫn thiếu họ `arxiv`, lead phải bù bằng họ khác để đủ 3 họ. |
+| `source_families` chỉ có 2 họ                                                          | Prompt chỉ yêu cầu "ít nhất 2 họ" cho researcher; lead phải kiểm tổng số họ khi gộp `sources.json` và giao thêm việc nếu thiếu (RUBRIC 2.2).                                                    |
+| Agent dừng mà không có `report.md`                                                     | Prompt của lead thiếu bước 4-5; hoặc đụng giới hạn đệ quy.                                                                                                                                      |
+| `subagent_calls` bằng 0                                                                | Prompt không bắt giao việc, hoặc `description` của subagent quá mơ hồ.                                                                                                                          |
+| Lỗi tạo sandbox                                                                        | Sai `DAYTONA_API_KEY` hoặc hết hạn mức: dừng/xóa các sandbox cũ trong dashboard Daytona, hoặc đặt `SANDBOX=docker` để dùng container Docker cục bộ.                                             |
+| Lần này báo cáo hợp lệ, lần sau trích dẫn lỗi                                          | Tính ngẫu nhiên của LLM. Siết prompt (ví dụ yêu cầu rõ "một dòng cho mỗi nguồn") và validator; không sửa tay báo cáo.                                                                           |
+| Cảnh báo `Sandbox glob could not read ... under '/'`                                   | Vô hại: agent đã liệt kê thư mục gốc của sandbox.                                                                                                                                               |
+| Báo cáo có `[n]` không tồn tại                                                         | Lead viết báo cáo trước khi gộp `sources.json`; bắt buộc chạy validator và sửa.                                                                                                                 |
+| `## References` gộp nhiều nguồn dưới một số, hoặc số tham khảo lệch với `sources.json` | LLM tự viết danh sách tham khảo. Đừng để nó viết: bắt lead bỏ phần này và chạy `finalize_citations.py` (mục 2.6).                                                                               |
 
 Gợi ý: nếu có LangSmith, bật tracing để xem agent đã gọi công cụ và lệnh shell nào.
 
@@ -164,9 +164,9 @@ Các tính năng giúp hệ thống chạy dài hơi và an toàn hơn (mỗi m�
 ## 7. Tự kiểm tra trước khi nộp
 
 - [ ] (Khuyến khích) viết vài test cho `with_retry`, `slugify`, `check_citations` (mock `time.sleep`); `pytest` không có trong `requirements.txt`, cài thêm bằng `pip install pytest` nếu dùng.
-- [ ] `python tools.py` cho kết quả thật ở cả 5 công cụ (có thể mất thời gian vì retry).
-- [ ] Mỗi báo cáo có `subagent_calls >= 3` và `source_families` có ít nhất 3 họ nguồn trong `meta.json`.
-- [ ] `python3 check_citations.py reports/<slug>.md reports/<slug>.sources.json` in `OK` cho cả 5 báo cáo (gồm một dòng tham khảo cho mỗi nguồn).
-- [ ] Đọc ít nhất 3 trích dẫn trong mỗi báo cáo và mở nguồn để xác nhận câu đó đúng.
-- [ ] Không có `.env` hay khóa API nào trong repo (`git status`, và `git log -p | grep -i key`).
-- [ ] Repo công khai, `requirements.txt` đủ để cài và chạy, README của repo nộp nói cách chạy.
+- [x] `python tools.py` cho kết quả thật ở cả 5 công cụ (có thể mất thời gian vì retry).
+- [x] Mỗi báo cáo có `subagent_calls >= 3` và `source_families` có ít nhất 3 họ nguồn trong `meta.json`.
+- [x] `python3 check_citations.py reports/<slug>.md reports/<slug>.sources.json` in `OK` cho cả 5 báo cáo (gồm một dòng tham khảo cho mỗi nguồn).
+- [x] Đọc ít nhất 3 trích dẫn trong mỗi báo cáo và mở nguồn để xác nhận câu đó đúng.
+- [x] Không có `.env` hay khóa API nào trong repo (`git status`, và `git log -p | grep -i key`).
+- [x] Repo công khai, `requirements.txt` đủ để cài và chạy, README của repo nộp nói cách chạy.

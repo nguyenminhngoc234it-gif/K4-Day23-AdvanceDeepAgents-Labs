@@ -1,0 +1,114 @@
+[
+  {
+    "n": 1,
+    "id": "mdpi-2026-video-generation",
+    "url": "https://www.mdpi.com/2673-6470/6/1/23",
+    "title": "Generative AI for Text-to-Video Generation: Recent Advances ...",
+    "date": "2026-03-09",
+    "source": "web"
+  },
+  {
+    "n": 2,
+    "id": "arxiv-2026-sample",
+    "url": "https://arxiv.org/search/?query=video+generation",
+    "title": "Recent arXiv papers on video generation (sample)",
+    "date": "2026-10",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "hf-2310.19512",
+    "url": "https://huggingface.co/papers/2310.19512",
+    "title": "VideoCrafter1: Open Diffusion Models for High-Quality Video Generation",
+    "date": "2023-10-30",
+    "source": "hf-search"
+  },
+  {
+    "n": 4,
+    "id": "2610.09307",
+    "url": "https://arxiv.org/abs/2610.09307",
+    "title": "vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation",
+    "date": "2026-10-07",
+    "source": "arxiv"
+  },
+  {
+    "n": 5,
+    "id": "2609.15863",
+    "url": "https://huggingface.co/papers/2609.15863",
+    "title": "LynnReal-Omni: Native multi-modal Video Generation for Agentic Visual Workflows",
+    "date": "2026-09-14",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "2512.13677",
+    "url": "https://huggingface.co/papers/2512.13677",
+    "title": "JoVA: Unified Multimodal Learning for Joint Video-Audio Generation",
+    "date": "2025-12-15",
+    "source": "hf-search"
+  },
+  {
+    "n": 7,
+    "id": "web-1",
+    "url": "https://link.springer.com/article/10.1186/s40537-025-01314-3",
+    "title": "Text-to-video generators: a comprehensive survey | Journal of Big Data | Springer Nature Link",
+    "date": "2025-11-14",
+    "source": "web"
+  },
+  {
+    "n": 8,
+    "id": "web-3",
+    "url": "https://exa.ai/library/publication/0tz2tmsq8z4",
+    "title": "A Survey on Video Generation Technologies, Applications, and Ethical Considerations",
+    "date": "2025-11-19",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "hf-search-2",
+    "url": "https://huggingface.co/papers/2407.05965",
+    "title": "T2VSafetyBench: Evaluating the Safety of Text-to-Video Generative Models",
+    "date": "2024-07-08",
+    "source": "hf-search"
+  },
+  {
+    "n": 10,
+    "id": "arxiv-2610.00812",
+    "url": "https://arxiv.org/html/2610.00812v1",
+    "title": "Video Generation Models: A Survey of Post-Training ... - arXiv",
+    "date": "2026-09-30",
+    "source": "arxiv"
+  },
+  {
+    "n": 11,
+    "id": "hf-2406.00908",
+    "url": "https://huggingface.co/papers/2406.00908",
+    "title": "ZeroSmooth: Training-free Diffuser Adaptation for High Frame Rate Video Generation",
+    "date": "2024-06-03",
+    "source": "hf-search"
+  },
+  {
+    "n": 12,
+    "id": "2609.31847",
+    "url": "https://arxiv.org/abs/2609.31847",
+    "title": "Omni-IO Skills: Harnessing Your Agent Omni-Native",
+    "date": "2026-09-25",
+    "source": "arxiv"
+  },
+  {
+    "n": 13,
+    "id": "2601.17323",
+    "url": "https://huggingface.co/papers/2601.17323",
+    "title": "SkyReels-V3 Technique Report",
+    "date": "2026-01-24",
+    "source": "hf-search"
+  },
+  {
+    "n": 14,
+    "id": "hf-search-1",
+    "url": "https://huggingface.co/papers/2608.26535",
+    "title": "Multi2AV-Safety: Benchmarking Safety in Multimodal-to-Audio-Video Generation",
+    "date": "2026-08-27",
+    "source": "hf-search"
+  }
+]
